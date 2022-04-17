@@ -1,19 +1,4 @@
 @import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css);
-/* reset */
-body,p{
-    margin: 0; 
-}
-
-p{
-    font-size: initial;
-    font-weight: initial;
-}
-
-a{
-    text-decoration: none;
-    color:initial;
-}
-
 /* blind */
 .blind{
     position: absolute;
