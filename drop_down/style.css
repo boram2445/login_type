@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+/* reset */
+select{
+    outline: none;
+}
+
+/* blind */
+.blind{
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+}
+
+/* style */
+*{
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    position: relative;
+    height: 100vh;
+}
+
+.select-box{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.lan-select{
+    width: 200px;
+    padding: 11px 0 11px 12px;
+    text-align: start;
+    line-height: 14px;
+    font-size: 12px;
+    border-radius: 10px;
+    border: 1px #C4C4C4 solid;
+    background-image: url(images/icon-Triangle-down.svg);
+    background-repeat: no-repeat;
+    background-position: right 13px center;
+    cursor: pointer;
+}
+
+.lan-lists{
+    background-color: white;
+    border: 1px #C4C4C4 solid;
+    border-radius: 10px;
+    box-shadow: 4px 4px 14px 0px #00000026;
+    margin-top: 9px;
+    padding: 3px 0;
+    visibility: hidden;
+}
+
+
+.lan-select.clicked{
+    outline: 3px solid #F8E4FF;
+    border: solid 1px #9B51E0;
+    font-size: 14px;
+    line-height: 16px;
+    background-image: url(images/Polygon\ 1.svg);
+}
+
+.lan-list{
+    padding: 12px 0 12px 17px;
+    cursor:pointer;
+}
+
+.lan-lists.clicked{
+    visibility:visible;
+}
+
+.lan-list:hover{
+    background-color: #F8E4FF;
+    border-radius: 8px;
+    width: 184px;
+    height: 30px;
+    margin: 5px 7px;
+    /*  왜 패딩을 주니까 정렬이 되죠...? */
+    padding:7px 0 7px 10px;
+}

@@ -30,10 +30,11 @@ body{
     transform: translate(-50%, -50%);
     border: 1px #C4C4C4 solid;
     text-align: center;
+    padding: 38px 30px 30px;
 }
 
 .logo-login{
-    margin: 29px auto 26px; 
+    margin: 0 auto 26px; 
 }
 
 .des-login{
@@ -42,13 +43,13 @@ body{
 }
 
 .btn-login{
-    background-color: #2F80ED;
+    margin: 32px auto 0;
+    padding: 17px 0 15px 0 ;
+    width: 440px;
     color: #FFFFFF;
     font-weight: bold;
     font-size: 22px;
     display: block;
-    width: 440px;
-    padding: 17px 0 15px 0 ;
-    margin: 32px auto 29px;
+    background-color: #2F80ED;
     border-radius: 5px;
 }

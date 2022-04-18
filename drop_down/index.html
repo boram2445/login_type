@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drop Box</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="reset.css">
+</head>
+<body>
+    <article class="select-box">
+        <h2 class="blind">최애 프로그래밍 언어를 선택</h2>
+        <button class="lan-select">최애 프로그래밍 언어</button>
+        <ul class="lan-lists">
+            <li class="lan-list" id="python">python</li>
+            <li class="lan-list" id="java">Java</li>
+            <li class="lan-list" id="javascript">Javascript</li>
+            <li class="lan-list" id="C#">C#</li>
+            <li class="lan-list" id="C/C++">C/C++</li>
+        </ul>
+    </article>
+
+    <script>
+        const selectBox = document.querySelector('.lan-select');
+        const selectLists = document.querySelector('.lan-lists');
+        //select box 목록이 열리게 하기
+        selectBox.addEventListener("click",()=>{
+            selectBox.classList.toggle('clicked');
+            selectLists.classList.toggle('clicked');
+        })
+
+        //선택한 값 박스에 보이게 하기
+        const items = document.querySelectorAll('.lan-list');
+        const handleSelect = function(item){
+            selectBox.innerHTML = item.id;
+            selectBox.classList.remove('clicked');
+            selectLists.classList.remove('clicked');
+        }
+        items.forEach(function(item){
+            item.addEventListener('click',()=>handleSelect(item));
+        })
+
+    </script>
+</body>
+</html>
