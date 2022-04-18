@@ -1,1 +1,179 @@
+@import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css);
 
+/* reset */
+a{
+    text-decoration: none;
+    color: initial;
+}
+
+*{
+    font-family: 'Spoqa Han Sans Neo', 'sans-serif';
+}
+
+body{
+    background-color: #dddddd;
+    position: relative;
+    height: 100vh;
+    box-sizing: border-box;
+}
+
+.login{
+    width: 520px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    border: 1px solid #C4C4C4;
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.main-login{
+    padding: 26px 23px 23px; 
+}
+
+.header-login{
+    padding: 19px 0 17px;
+    border-bottom: 1px solid #C4C4C4;
+    font-size: 16px;
+    font-weight: 500;
+    background-image: url("../images/close.png");
+    background-repeat: no-repeat;
+    background-position: right 23px center;
+}
+
+.des-main{
+    text-align: start;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px;
+}
+
+.input{
+    display: block;
+    border: 1px #C4C4C4 solid;
+    font-size: 16px;
+    padding: 14px 15px;
+    border-radius: 5px;
+    /* main에 padding을 주었을때 꽉채우는 방법? 
+    - input태그 안에 padding이 있어서 width를 지정하면 사이즈가 커져버림.*/
+    width: 441px;
+}
+
+.input.id{
+    margin:24px auto 0;
+}
+
+.input.pas{
+    margin: 10px auto 17px;
+}
+
+.wrap-state{
+   display: flex;
+   position: relative;
+}
+
+.check-box{
+    position: absolute;
+    display: none;
+}
+
+.check-box.checked{
+    display: block;
+}
+
+.des-state{
+    margin-left: 8px;
+    /* 수직 정렬 다시 확인 */
+    line-height: 22px;
+    color:#767676;
+}
+
+.btn-login{
+    width: 472px;
+    margin: 21px auto 20px;
+    padding: 14px 0 14px;
+    background-color: #2F80ED;
+    color:#FFFFFF;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.wrap-find a{
+    color: #767676;
+    font-size: 14px;
+}
+
+.pas-find::before{
+    /* 왜 딱안붙는 거죠? */
+    margin: 0 12px 0 5px;
+    content:"";
+    display: inline-block;
+    background-color: #767676;
+    width:1px;
+    height: 14px;
+    vertical-align: bottom;
+}
+
+.line-main{
+    margin: 30px 0 20px 0;
+    color: #767676;
+    font-size: 14px;
+}
+
+.line-main::before, .line-main::after{
+    content:"";
+    display: inline-block;
+    background-color: #C4C4C4;
+    width:210px;
+    height: 1px;
+    vertical-align:middle;
+}
+
+.line-main::before{
+    margin-right: 13px;
+}
+
+.line-main::after{
+    margin-left:13px;
+}
+
+.btn{
+    width: 470px;
+    border: 1px solid #767676;
+    padding: 15px 0;
+    border-radius: 5px;
+    background-repeat: no-repeat;
+    margin-bottom: 10px;
+}
+
+.btn a{
+    color: #767676;
+}
+
+.btn.google{
+   background-image: url(../images/icon_google.png);
+   background-position: left 16px center;
+}
+
+.btn.facebook{
+    border-color: #2D9CDB;
+    background-image: url(../images/icon_facebook.png);
+    background-position: left 19px center;
+}
+
+.btn.naver{
+    border-color:#00BF18;
+    background-image: url(../images/icon_naver.png);
+    background-position: left 15px center;
+}
+
+.btn.kakao{
+    border-color: #F2C94C;
+    background-image: url(../images/icon_kakao.png);
+    background-position: left 15px center;
+    margin-bottom: 0;
+}

@@ -11,14 +11,13 @@
 /* style */
 *{
     box-sizing: border-box;
+    font-family: 'Spoqa Han Sans Neo', 'sans-serif';
 }
 
-body{
-    
+body{ 
     background-color: #dddddd;
     position: relative;
     height: 100vh;
-    font-family: 'Spoqa Han Sans Neo', 'sans-serif';
 }
 
 .login{
