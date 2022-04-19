@@ -10,37 +10,32 @@
 </head>
 <body>
     <article class="select-box">
-        <h2 class="blind">최애 프로그래밍 언어를 선택</h2>
-        <button class="lan-select">최애 프로그래밍 언어</button>
-        <ul class="lan-lists">
-            <li class="lan-list" id="python">python</li>
-            <li class="lan-list" id="java">Java</li>
-            <li class="lan-list" id="javascript">Javascript</li>
-            <li class="lan-list" id="C#">C#</li>
-            <li class="lan-list" id="C/C++">C/C++</li>
+        <h2 class="blind">최애 프로그래밍 언어를 선택해 주세요</h2>
+        <button class="btn-select txt-ellipsie">최애 프로그래밍 언어</button>
+        <ul class="cont-lists">
+            <li><button type="button" id="Python" class="cont-list txt-ellipsie" >Python</button></li>
+            <li><button type="button" id="Java" class="cont-list txt-ellipsie" >Java</button></li>
+            <li><button type="button" id="JavaScript" class="cont-list txt-ellipsie" >JavaScript</button></li>
+            <li><button type="button" id="C#" class="cont-list txt-ellipsie" >C#</button></li>
+            <li><button type="button" id="C/C++" class="cont-list txt-ellipsie" >C/C++</button></li>
         </ul>
     </article>
-
     <script>
-        const selectBox = document.querySelector('.lan-select');
-        const selectLists = document.querySelector('.lan-lists');
+        const selectBox = document.querySelector('.btn-select');
         //select box 목록이 열리게 하기
         selectBox.addEventListener("click",()=>{
-            selectBox.classList.toggle('clicked');
-            selectLists.classList.toggle('clicked');
+            selectBox.classList.toggle('on');
         })
-
         //선택한 값 박스에 보이게 하기
-        const items = document.querySelectorAll('.lan-list');
+        const items = document.querySelectorAll('.cont-list');
         const handleSelect = function(item){
             selectBox.innerHTML = item.id;
-            selectBox.classList.remove('clicked');
-            selectLists.classList.remove('clicked');
+            selectBox.classList.remove('on');
         }
         items.forEach(function(item){
+            console.log(item);
             item.addEventListener('click',()=>handleSelect(item));
         })
-
     </script>
 </body>
 </html>
