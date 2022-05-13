@@ -33,6 +33,7 @@ body{
     background: url(images/icon-Triangle-down.svg) no-repeat;
     background-position: right 13px center;
     cursor: pointer;
+    line-height: 16px;
 }
 
 .btn-select.on{
